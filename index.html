@@ -4,172 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pranesh Chandrasekaran | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav>
     <div class="nav-container">
-      <div class="logo">PC</div>
+      <div class="logo">Pranesh</div>
+      <div class="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </div>
   </nav>
 
-  <section id="home" class="hero">
+  <!-- Hero -->
+  <section id="home" class="hero fade-in">
     <div class="hero-content">
-      <h1>Pranesh Chandrasekaran</h1>
-      <p class="subheading">Cloud Infrastructure Specialist | Web Developer</p>
+      <h1>Hi, I'm Pranesh</h1>
+      <p class="subheading">Building elegant, high-performance digital experiences</p>
       <a href="#contact" class="cta-button">Get In Touch</a>
     </div>
   </section>
 
-  <section id="about">
+  <!-- About -->
+  <section id="about" class="fade-in">
     <div class="container">
-      <h2 class="section-title fade-in">About Me</h2>
-      <div class="card fade-in">
-        <p>
-          A results-driven Cloud Infrastructure and Web Development enthusiast with a strong academic foundation in networking, DevOps, and distributed systems. I have hands-on experience building responsive web applications and scalable cloud-based solutions, alongside a deep commitment to delivering quality, performance, and innovation.
-        </p>
-        <p>
-          Currently pursuing my Master's in Cloud Infrastructure & Administration at Lambton College, I blend technical proficiency with leadership skills gained through years of academic and professional initiatives. I'm passionate about leveraging cloud-native tools, automation, and modern programming practices to solve real-world challenges.
-        </p>
-      </div>
-
-      <div class="card fade-in">
-        <h2>Education</h2>
-        <p><strong>Lambton College, Ontario, Canada</strong><br>
-        M.S. in Cloud Infrastructure and Administration (Expected May 2026)<br>
-        GPA: 3.4 / 4.0<br>
-        <em>Courses:</em> Cloud Computing, DevOps, Network Security, Python, Go, Serverless Computing, Distributed Systems</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <h2>Creative Developer</h2>
+        <p>I design and develop clean, interactive user interfaces and efficient backend systems.</p>
       </div>
     </div>
   </section>
 
-  <section id="experience">
+  <!-- Skills -->
+  <section id="skills" class="fade-in">
     <div class="container">
-      <h2 class="section-title fade-in">Experience</h2>
-      <div class="card fade-in">
-        <h2>Professional Experience</h2>
-        <p><strong>Freelance Web Developer</strong> (May 2023 – Present)<br>
-        Built responsive websites for SMEs using HTML, CSS, Bootstrap, and Python. Integrated custom backend logic for client data workflows.</p>
-
-        <p><strong>Junior Developer – Academic Project</strong><br>
-        Sri Eshwar College of Engineering (2021 – 2024)<br>
-        Developed a Django-based library management system with PostgreSQL, user authentication, and overdue notification system. Optimized backend queries to improve performance by 20%.</p>
-      </div>
-
-      <div class="card fade-in">
-        <h2>Leadership</h2>
-        <p><strong>President – Centre for Higher Education</strong> (2020 – 2024)<br>
-        Led 30+ members organizing workshops, seminars, and research sessions attended by over 500 students.</p>
-
-        <p><strong>Executive Member – Student Leadership Council</strong> (2021 – 2024)</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
     <div class="container">
-      <h2 class="section-title fade-in">Projects</h2>
-      <div class="card fade-in">
-        <h2>Featured Projects</h2>
-        <p><strong>E-Commerce Platform</strong> (Jun 2023 – Nov 2023)<br>
-        Full-stack Django project with cart functionality, admin dashboard, and integrated payment gateway.</p>
-
-        <p><strong>Sales Predictor</strong> (Mar 2022 – Jul 2022)<br>
-        Flask-based prediction model achieving 90% accuracy using Scikit-learn. Designed UI with Bootstrap and managed storage with PostgreSQL.</p>
-      </div>
+      <h2 class="section-title">Contact</h2>
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title fade-in">Skills & Tools</h2>
-      <div class="card fade-in">
-        <div class="skills-grid">
-          <div class="skill-item">
-            <i class="fab fa-python"></i>
-            <span>Python</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js-square"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-html5"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-css3-alt"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-database"></i>
-            <span>PostgreSQL</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-git-alt"></i>
-            <span>Git</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-linux"></i>
-            <span>Linux</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-aws"></i>
-            <span>AWS</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-docker"></i>
-            <span>Docker</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-react"></i>
-            <span>React</span>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-server"></i>
-            <span>Django</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-bootstrap"></i>
-            <span>Bootstrap</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title fade-in">Get In Touch</h2>
-      <div class="card fade-in">
-        <form class="contact-form" action="https://formspree.io/f/xwpbplzr" method="post">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Pranesh Chandrasekaran. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Pranesh Chandrasekaran. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
