@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -12,16 +12,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Fade in animation on scroll
+// Scroll reveal fade-in
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
 };
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
@@ -30,8 +30,20 @@ document.querySelectorAll('.fade-in').forEach(el => {
   observer.observe(el);
 });
 
-// Navbar background on scroll
+// Navbar scroll background
+const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
-  const nav = document.querySelector('nav');
   if (window.scrollY > 50) {
-    nav.style.background
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+// Mobile nav toggle
+const mobileMenu = document.querySelector('.mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+mobileMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('mobile-active');
+  mobileMenu.classList.toggle('open');
+});
